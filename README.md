@@ -19,3 +19,26 @@ Ilustrar conceitos de front e back end.
 - Execute o comando npm install;
 - Crie um arquivo chamado .env na raiz do projeto e adicione as chaves PORT e API_KEY, sendo PORT a porta que o servidor vai escutar e API_KEY a chave devolvida pela aplicação da Nasa;
 - Abra um terminal, navegue até a pasta do projeto e rode o comando npm run dev.
+
+## Estrutura
+
+- index.js: Ponto de entrada da aplicação;
+- routes: Rotas no servidor Express;
+-- router.js: Agregador de rotas;
+-- paths: Rotas individuais;
+- models: Estruturas de dados;
+-- server.js: Inicializador do servidor;
+- controllers: Lógica de negócios;
+- app: Front end feito em React.
+-- src/index.js: Ponto de entrada do front end;
+-- src/App.js: Carrega as partes do front end (telas Home e Login).
+
+## Dependências
+
+- axios: Faz a chamada na API da Nasa;
+- cors: Habilita regras e cabeçalhos CORS na API do Express;
+- dotenv: Gerencia variáveis de ambiente;
+- express: Facilita a criação e gestão de rotas em servidores Node;
+- concurrently: Facilita a execução de múltiplos comandos simultaneamente no terminal.
+
+O React é um pacote a parte, dentro do pacote do servidor. Ele possui seu próprio package.json com dependências.
