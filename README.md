@@ -2,6 +2,8 @@
 
 Este app utiliza React, Node, Express e a API APOD da Nasa para simular um ambiente logado. Ao clicar no botão de login, a aplicação exibe dados da APOD.
 
+Feito com base neste tutorial: https://medium.com/leniolabs/build-and-deploy-a-web-application-with-react-and-node-js-express-1d06cae88705
+
 ## Motivação
 
 Ilustrar conceitos de front e back end.
