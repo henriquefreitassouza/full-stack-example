@@ -8,6 +8,12 @@ Feito com base neste tutorial: https://medium.com/leniolabs/build-and-deploy-a-w
 
 Ilustrar conceitos de front e back end.
 
+## Funcionamento
+
+O app mostra uma tela de login que possui apenas um botão. Ao clicar no botão de login, uma chamada é feita a API local criada no Express e o usuário é autenticado. A autenticação acontece fazendo uma consulta ao arquivo .env na raiz do projeto e consultando a chave API_KEY. Esta chave é então armazenada no localStorage do navegador. A existência do localStorage sinaliza ao app que o usuário está logado.
+
+Uma vez logado, o app exibe a tela home e faz uma chamada a API local criada no Express. Essa chamada, por sua vez, usa o Axios para fazer uma consulta na API da Nasa e retornar o APOD do dia da consulta.
+
 ## Pré requisitos
 
 - Node e NPM
@@ -24,14 +30,14 @@ Ilustrar conceitos de front e back end.
 
 - index.js: Ponto de entrada da aplicação;
 - routes: Rotas no servidor Express;
--- router.js: Agregador de rotas;
--- paths: Rotas individuais;
+- routes/router.js: Agregador de rotas;
+- routes/paths: Rotas individuais;
 - models: Estruturas de dados;
--- server.js: Inicializador do servidor;
+- models/server.js: Inicializador do servidor;
 - controllers: Lógica de negócios;
 - app: Front end feito em React.
--- src/index.js: Ponto de entrada do front end;
--- src/App.js: Carrega as partes do front end (telas Home e Login).
+- app/src/index.js: Ponto de entrada do front end;
+- app/src/App.js: Carrega as partes do front end (telas Home e Login).
 
 ## Dependências
 
